@@ -1,27 +1,26 @@
-<div id="<%= dom_id user %>">
-  <p>
-    <strong>First name:</strong>
+<tr id="<%= dom_id user %>">
+  <td>
     <%= user.first_name %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Last name:</strong>
+  <td>
     <%= user.last_name %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Email:</strong>
+  <td>
     <%= user.email %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Phone:</strong>
+  <td>
     <%= user.phone %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Twitter:</strong>
+  <td>
     <%= user.twitter %>
-  </p>
+  </td>
 
-</div>
+  <td>
+    <%= link_to "Show this user", user %>
+  </td>
+
+</tr>

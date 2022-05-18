@@ -1,10 +1,32 @@
-<p style="color: green"><%= notice %></p>
+<br>
 
-<%= render @user %>
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
 
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
 
-  <%= button_to "Destroy this user", @user, method: :delete %>
+<p>
+  <strong>Email</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @user.phone %>
+</p>
+
+<p>
+  <strong>Twitter:</strong>
+  <%= @user.twitter %>
+</p>
+
+<div class="d-flex gap-2">
+  <%= link_to "Edit this user", edit_user_path(@user), class: "btn btn-primary" %>
+  <%= link_to "Back to users", users_path, class: "btn btn-secondary" %>
+  <%= button_to "Destroy this user", @user, method: :delete, class: "btn btn-danger" %>
 </div>
